@@ -1,0 +1,72 @@
+# DeltaVision Configuration
+
+# Database Settings
+database:
+  host: "localhost"
+  port: 5432
+  name: "deltavision"
+  user: "deltavision_user"
+  password: "deltavision_pass"
+  pool_size: 10
+  max_overflow: 20
+
+# Redis Settings (optional, for caching)
+redis:
+  host: "localhost"
+  port: 6379
+  db: 0
+  password: null
+
+# API Settings
+api:
+  host: "0.0.0.0"
+  port: 8000
+  debug: false
+  cors_origins: ["http://localhost:3000", "http://localhost:8080"]
+
+# Model Settings
+models:
+  yolo:
+    model_path: "yolov8n.pt"  # or yolov8s.pt for better accuracy
+    device: "cuda"  # or "cpu"
+    confidence_threshold: 0.5
+    iou_threshold: 0.45
+  
+  tracking:
+    tracker_type: "bytetrack"
+    track_buffer: 30
+    match_thresh: 0.8
+
+# Processing Settings
+processing:
+  max_workers: 4
+  chunk_size: 1000
+  frame_batch_size: 32
+  video_buffer_size: 10
+
+# Logging
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/deltavision.log"
+  max_size: "10MB"
+  backup_count: 5
+
+# Analytics
+analytics:
+  heatmap_resolution: 50
+  time_window_minutes: 60
+  bottleneck_threshold: 2.0
+  productivity_window_minutes: 480  # 8 hours
+
+# Export Settings
+export:
+  output_dir: "data/exports"
+  formats: ["csv", "json", "parquet"]
+  compression: "gzip"
+  
+# Performance
+performance:
+  gpu_memory_fraction: 0.8
+  enable_mixed_precision: true
+  optimize_for_inference: true

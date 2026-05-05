@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: deltavision
+Version: 1.0.0
+Summary: Factory Analytics for Bulletproof Vest Manufacturing
+Home-page: UNKNOWN
+Author: DeltaVision Team
+Author-email: team@deltavision.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Manufacturing
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Provides-Extra: dev
+Provides-Extra: gpu

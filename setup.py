@@ -1,0 +1,61 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="deltavision",
+    version="1.0.0",
+    description="Factory Analytics for Bulletproof Vest Manufacturing",
+    packages=find_packages(),
+    python_requires=">=3.8",
+    install_requires=[
+        "opencv-python>=4.8.0",
+        "ultralytics>=8.0.10",
+        "supervision>=0.25.0",
+        "sqlalchemy>=2.0.0",
+        "psycopg2-binary>=2.9.0",
+        "alembic>=1.12.0",
+        "fastapi>=0.104.0",
+        "uvicorn[standard]>=0.23.0",
+        "pydantic>=2.4.0",
+        "plotly>=5.15.0",
+        "pandas>=2.0.0",
+        "numpy>=1.24.0",
+        "seaborn>=0.12.0",
+        "pyyaml>=6.0.0",
+        "python-dotenv>=1.0.0",
+        "click>=8.1.0",
+        "tqdm>=4.66.0",
+        "shapely>=2.0.0",
+    ],
+    extras_require={
+        "dev": [
+            "pytest>=7.4.0",
+            "pytest-asyncio>=0.21.0",
+            "pytest-cov>=7.1.0",
+            "black>=23.9.0",
+            "flake8>=6.1.0",
+            "mypy>=1.5.0",
+        ],
+        "gpu": [
+            "torch>=2.0.0",
+            "torchvision>=0.15.0",
+        ],
+    },
+    entry_points={
+        "console_scripts": [
+            "deltavision=app.main:cli",
+        ],
+    },
+    author="DeltaVision Team",
+    author_email="team@deltavision.com",
+    classifiers=[
+        "Development Status :: 4 - Beta",
+        "Intended Audience :: Manufacturing",
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
+    ],
+)

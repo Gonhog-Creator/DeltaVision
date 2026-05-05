@@ -1,0 +1,83 @@
+{
+  "A11": [
+    {
+      "name": "material_rack",
+      "description": "Raw material storage area",
+      "polygon": [[100, 100], [400, 100], [400, 300], [100, 300]],
+      "type": "storage",
+      "expected_dwell_time": 30
+    },
+    {
+      "name": "cutting_table",
+      "description": "Fabric cutting stations",
+      "polygon": [[450, 100], [750, 100], [750, 350], [450, 350]],
+      "type": "workstation",
+      "expected_dwell_time": 300
+    },
+    {
+      "name": "panel_assembly",
+      "description": "Panel assembly area",
+      "polygon": [[800, 100], [1100, 100], [1100, 400], [800, 400]],
+      "type": "workstation",
+      "expected_dwell_time": 240
+    },
+    {
+      "name": "sewing_line",
+      "description": "Main sewing stations",
+      "polygon": [[200, 450], [900, 450], [900, 750], [200, 750]],
+      "type": "workstation",
+      "expected_dwell_time": 600
+    },
+    {
+      "name": "aisle_primary",
+      "description": "Main traffic aisle",
+      "polygon": [[1150, 100], [1400, 100], [1400, 800], [1150, 800]],
+      "type": "transit",
+      "expected_dwell_time": 15
+    }
+  ],
+  "A12": [
+    {
+      "name": "inspection",
+      "description": "Quality inspection stations",
+      "polygon": [[150, 150], [500, 150], [500, 400], [150, 400]],
+      "type": "quality_control",
+      "expected_dwell_time": 180
+    },
+    {
+      "name": "packing",
+      "description": "Final packing area",
+      "polygon": [[550, 150], [900, 150], [900, 450], [550, 450]],
+      "type": "workstation",
+      "expected_dwell_time": 120
+    },
+    {
+      "name": "rework",
+      "description": "Rework and repair area",
+      "polygon": [[950, 150], [1200, 150], [1200, 350], [950, 350]],
+      "type": "rework",
+      "expected_dwell_time": 300
+    },
+    {
+      "name": "finished_goods",
+      "description": "Finished goods storage",
+      "polygon": [[150, 500], [400, 500], [400, 700], [150, 700]],
+      "type": "storage",
+      "expected_dwell_time": 30
+    },
+    {
+      "name": "shipping_prep",
+      "description": "Shipping preparation area",
+      "polygon": [[450, 500], [800, 500], [800, 750], [450, 750]],
+      "type": "workstation",
+      "expected_dwell_time": 90
+    },
+    {
+      "name": "aisle_secondary",
+      "description": "Secondary traffic aisle",
+      "polygon": [[1250, 150], [1450, 150], [1450, 750], [1250, 750]],
+      "type": "transit",
+      "expected_dwell_time": 15
+    }
+  ]
+}

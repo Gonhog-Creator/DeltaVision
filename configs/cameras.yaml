@@ -1,0 +1,34 @@
+cameras:
+  A11:
+    id: "A11"
+    name: "Camera A11 - Main Assembly Floor"
+    description: "Overhead view of cutting, assembly, and sewing stations"
+    fps: 30
+    resolution:
+      width: 1920
+      height: 1080
+    detection_threshold: 0.5
+    tracking_max_disappeared: 30
+    tracking_max_distance: 100
+    
+  A12:
+    id: "A12"
+    name: "Camera A12 - Inspection & Packing"
+    description: "View of inspection area, packing stations, and material racks"
+    fps: 30
+    resolution:
+      width: 1920
+      height: 1080
+    detection_threshold: 0.5
+    tracking_max_disappeared: 30
+    tracking_max_distance: 100
+
+processing:
+  frame_skip: 2  # Process every 2nd frame for performance
+  gpu_enabled: true
+  batch_size: 1
+  
+output:
+  save_annotated_video: true
+  save_frames: false
+  export_format: "mp4"

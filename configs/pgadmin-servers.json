@@ -1,0 +1,17 @@
+{
+    "Servers": {
+        "1": {
+            "Name": "DeltaVision PostgreSQL",
+            "Group": "Servers",
+            "Host": "postgres",
+            "Port": 5432,
+            "MaintenanceDB": "postgres",
+            "Username": "deltavision_user",
+            "Password": "deltavision_pass",
+            "SSLMode": "prefer",
+            "ConnectionParameters": {
+                "sslmode": "prefer"
+            }
+        }
+    }
+}
